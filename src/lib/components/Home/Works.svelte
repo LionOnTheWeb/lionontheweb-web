@@ -48,6 +48,7 @@
 	div {
 		position: relative;
 		background-color: $primary-white;
+		perspective: 800px;
 	}
 	
 	ul {
@@ -56,6 +57,7 @@
 		white-space: nowrap;
 		width: auto;
 		overflow: scroll hidden;
+		transform: rotateX(30deg) rotateY(-15deg) rotateZ(42deg);
 
 		li {
 			display: inline-block;
@@ -65,6 +67,10 @@
 			width: 100%;
 			margin-right: 20px;
 			padding: 0 20px 70px;
+
+			@include breakpoint('tablet-portrait-up') {
+				display: block;
+			}
 		}
 	}
 </style>

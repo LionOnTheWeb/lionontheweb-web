@@ -20,7 +20,7 @@
 	<Header>About</Header>
 	<About/>
 
-	<Header>Works</Header>
+	<Header alignment="left">Works</Header>
 	<Works/>
 
 	<Blurbs/>

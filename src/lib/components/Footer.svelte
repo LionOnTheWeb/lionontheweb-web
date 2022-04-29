@@ -12,6 +12,10 @@
 		@extend %post-title;
 		text-align: center;
 		margin-bottom: 3rem;
+
+		@include breakpoint('tablet-portrait-up') {
+			padding: 0 30%;
+		}
 	}
 </style>
 

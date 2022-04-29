@@ -4,23 +4,38 @@
 		background-color: $primary-white;
 		padding-top: 80px;
 		padding-bottom: 100px;
+		position: relative;
+		
+		@include breakpoint('tablet-portrait-up') {
+			padding-top: 300px;
+		}
 	}
 
 	img {
-		max-width: 100%;
+		max-width: 400px;
 		max-height: 100%;
-		width: auto;
+		width: 100%;
 		height: auto;
 	}
 
 	p {
+		@extend %copy;
 		margin: 0 30px 0 30px;
 		margin-top: -2.5rem;
 		padding: 15px;
 		padding-top: 5px;
-		@extend %copy;
-		background-color: $primary-white;
 		display: inline-block;
+		background-color: $primary-white;
+
+		@include breakpoint('tablet-portrait-up') {
+			position: absolute;
+			right: 25px;
+			// bottom: -25px;
+			top: 50px;
+			max-width: 400px;
+			width: 100%;
+			margin: 0;
+		}
 	}
 </style>
 

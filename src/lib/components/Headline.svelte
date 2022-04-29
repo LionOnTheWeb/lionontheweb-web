@@ -7,7 +7,7 @@
 		display: block;
 		height: 3px;
 		max-width: 100%;
-		width: auto;
+		width: 100%;
 		margin-bottom: 18px;
 		background-color: $primary-white;
 	}
@@ -27,6 +27,6 @@
 
 <span></span>
 <div>
-	<h1>With great engineering, comes gerat usability</h1>
+	<h1>With great engineering, comes great usability</h1>
 	<h3> &#8212; your friendly neighborhood web developer</h3>
 </div>

@@ -22,7 +22,7 @@ const jumpLink = (e) => {
 		margin: 0 auto;
 		$height: 50px;
 		height: $height;
-		width: 95%;
+		// width: 95%;
 		background-color: darkorange;
 		$borderRadius: calc($height/2);
 		border-radius: $borderRadius $borderRadius $borderRadius $borderRadius;
