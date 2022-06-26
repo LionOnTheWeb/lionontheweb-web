@@ -18,6 +18,10 @@
 
 	.headline {
 		padding-top: 5rem;
+
+		@include breakpoint('mobile-only') {
+			height: 100vh;
+		}
 		
 		@include breakpoint('tablet-portrait-up') {
 			padding-bottom: calc(2rem * 9);

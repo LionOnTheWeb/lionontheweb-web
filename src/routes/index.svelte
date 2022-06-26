@@ -12,6 +12,23 @@
 	main {
 		background-color: $primary-white;
 	}
+
+	div {
+		position: relative;
+		background-color: $primary-white;
+		overflow: hidden;
+		padding-top: 8em;
+		padding-bottom: 3em;
+
+		@include breakpoint('tablet-portrait-up') {
+			// padding: 5em 0 5em 5em;
+		}
+	}
+
+	:global(.container) {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
 </style>
 
 <Intro /> 
@@ -21,11 +38,14 @@
 	<About/>
 
 	<Header alignment="left">Works</Header>
-	<Works/>
+	<div>
+		<Works/>
+	</div>
 
-	<Blurbs/>
 	<Header>Blurbs</Header>
-
+	<div>
+		<Blurbs/>
+	</div>
 </main>
 
 <Footer />

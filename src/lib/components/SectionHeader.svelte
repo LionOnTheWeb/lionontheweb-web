@@ -3,15 +3,30 @@
 </script>
 
 <style lang="scss">
+	div {
+		background-color: $primary-black;
+	}
+
 	h2 {
 		@extend %section-header;
 		color: $primary-white;
-		background-color: $primary-black;
 		padding-top: 50px;
-		// text-align: right;
+
+		&.left {
+			text-align: left;
+			transform: translateX(-1.2rem);
+		}
+		
+		&.right {
+			text-align: right;
+			transform: translateX(1.2rem);
+		}
+		// text-align: {alignment}
 	}
 </style>
 
-<h2 style="text-align: {alignment};">
-	<slot/>
-</h2>
+<div class="sectionHeader">
+	<h2 class={alignment}>
+		<slot/>
+	</h2>
+</div>
