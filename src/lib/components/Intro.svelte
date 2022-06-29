@@ -7,10 +7,10 @@
 <style lang="scss">
 	header {
 		position: relative;
-		color: $primary-white;
-		background-color: $primary-black;
+		color: var(--primary-white);
+		background-color: var(--primary-black);
 
-		@include breakpoint('tablet-portrait-up') {
+		@media (min-width: $breakpoint-sm) {
 			display: flex;
 			flex-flow: row nowrap;
 		}
@@ -18,12 +18,9 @@
 
 	.headline {
 		padding-top: 5rem;
-
-		@include breakpoint('mobile-only') {
-			height: 100vh;
-		}
+		height: 100vh;
 		
-		@include breakpoint('tablet-portrait-up') {
+		@media (min-width: $breakpoint-sm) {
 			padding-bottom: calc(2rem * 9);
 			flex: 1 1 50%;
 		}
@@ -33,9 +30,9 @@
 		// padding-top: 5rem;
 		padding-bottom: calc(2rem * 4);
 
-		@include breakpoint('tablet-portrait-up') {
-			color: $primary-black;
-			background-color: $primary-white;
+		@media (min-width: $breakpoint-sm) {
+			color: var(--primary-black);
+			background-color: var(--primary-white);
 			flex: 1 1 50%;
 		}
 	}

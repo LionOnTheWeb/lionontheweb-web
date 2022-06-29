@@ -4,12 +4,12 @@
 
 <style lang="scss">
 	div {
-		background-color: $primary-black;
+		background-color: var(--primary-black);
 	}
 
 	h2 {
 		@extend %section-header;
-		color: $primary-white;
+		color: var(--primary-white);
 		padding-top: 50px;
 
 		&.left {

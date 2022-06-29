@@ -62,7 +62,7 @@
 	// 	width: auto;
 	// 	overflow: scroll hidden;
 
-	// 	@include breakpoint('tablet-portrait-up') {
+	//  @media (min-width: var(--breakpoint-sm)) {
 	// 		// transform: rotateX(30deg) rotateY(-15deg) rotateZ(42deg);
 	// 		display: flex;
 

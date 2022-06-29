@@ -1,6 +1,6 @@
 <style lang="scss">
 	div {
-		padding: $mobile-padding;
+		padding: var(--mobile-padding);
 	}
 
 	span {
@@ -9,7 +9,7 @@
 		max-width: 100%;
 		width: 100%;
 		margin-bottom: 18px;
-		background-color: $primary-white;
+		background-color: var(--primary-white);
 	}
 
 	h1 {
@@ -18,7 +18,7 @@
 
 	h3 {
 		@extend %intro-byline;
-		color: $primary-gray;
+		color: var(--primary-gray);
 		padding-top: 20px;
 		padding-left: 1.2rem;
 		text-indent: -1.2rem;

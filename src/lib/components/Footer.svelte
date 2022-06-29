@@ -13,7 +13,7 @@
 		text-align: center;
 		margin-bottom: 3rem;
 
-		@include breakpoint('tablet-portrait-up') {
+		@media (min-width: $breakpoint-sm) {
 			padding: 0 30%;
 		}
 	}

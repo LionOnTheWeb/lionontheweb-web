@@ -13,7 +13,7 @@
 
 		&__container {
 			width: auto;
-			padding: $mobile-padding;
+			padding: var(--mobile-padding);
 			margin-bottom: 3rem;
 		}
 	}

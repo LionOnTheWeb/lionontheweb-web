@@ -1,12 +1,12 @@
 <style lang="scss">
 	div {
-		padding: $mobile-padding;
-		background-color: $primary-white;
+		padding: var(--mobile-padding);
+		background-color: var(--primary-white);
 		padding-top: 80px;
 		padding-bottom: 100px;
 		position: relative;
 		
-		@include breakpoint('tablet-portrait-up') {
+		@media (min-width: $breakpoint-sm) {
 			padding-top: 300px;
 		}
 	}
@@ -25,9 +25,9 @@
 		padding: 15px;
 		padding-top: 5px;
 		display: inline-block;
-		background-color: $primary-white;
+		background-color: var(--primary-white);
 
-		@include breakpoint('tablet-portrait-up') {
+		@media (min-width: $breakpoint-sm) {
 			position: absolute;
 			right: 25px;
 			// bottom: -25px;

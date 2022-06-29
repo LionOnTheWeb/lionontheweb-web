@@ -1,9 +1,9 @@
 <style lang="scss">
 	div {
-		padding: $mobile-padding;
+		padding: var(--mobile-padding);
 		text-align: center;
 
-		@include breakpoint('tablet-portrait-up') {
+		@media (min-width: $breakpoint-sm) {
 			text-align: right;
 		}
 	}
@@ -13,7 +13,7 @@
 		padding-top: 150px;
 		padding-bottom: 75px;
 
-		@include breakpoint('tablet-portrait-up') {
+		@media (min-width: $breakpoint-sm) {
 			padding-top: 5rem;
 			padding-bottom: 30px;
 		}
@@ -32,12 +32,12 @@
 	ul {
 		list-style: none;
 		@extend %intro-roles;
-		color: $primary-gray;
+		color: var(--primary-gray);
 
 		li {
 			margin-top: 14px;
 
-			@include breakpoint('tablet-portrait-up') {
+			@media (min-width: $breakpoint-sm) {
 				text-align: right;
 			}
 		}

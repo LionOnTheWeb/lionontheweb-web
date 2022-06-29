@@ -33,7 +33,7 @@
 
 	&__subtitle {
 		@extend %post-subtitle;
-		color: $primary-gray;
+		color: var(--primary-gray);
 	}
 
 	&__summary {
@@ -49,7 +49,7 @@
 
 	&__date {
 		@extend %blurb-date;
-		color: $primary-gray;
+		color: var(--primary-gray);
 	}
 }
 </style>

@@ -10,19 +10,15 @@
 
 <style lang="scss">
 	main {
-		background-color: $primary-white;
+		background-color: var(--primary-white);
 	}
 
 	div {
 		position: relative;
-		background-color: $primary-white;
+		background-color: var(--primary-white);
 		overflow: hidden;
 		padding-top: 8em;
 		padding-bottom: 3em;
-
-		@include breakpoint('tablet-portrait-up') {
-			// padding: 5em 0 5em 5em;
-		}
 	}
 
 	:global(.container) {

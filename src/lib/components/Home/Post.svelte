@@ -24,7 +24,7 @@ export let postImage: Image = {
 	.post {
 		display: inline-block;
 		list-style: none;
-		font-family: $font-primary;
+		font-family: var(--font-primary);
 		max-width: 300px;
 		width: 100%;
 		margin-right: 50%;
@@ -34,11 +34,11 @@ export let postImage: Image = {
 		}
 		
 		padding: 40px 20px 70px;
-		background-color: $primary-black;
+		background-color: var(--primary-black);
 		position: relative;
 		height: 390px;
 		
-		@include breakpoint('tablet-portrait-up') {
+		@media (min-width: var(--breakpoint-sm)) {
 			display: block;
 			margin-left: 10%;
 			margin-right: 20%;
@@ -58,12 +58,12 @@ export let postImage: Image = {
 	
 		&__title {
 			@extend %post-title;
-			color: $primary-white;
+			color: var(--primary-white);
 		}
 	
 		&__subtitle {
 			@extend %post-subtitle;
-			color: $primary-gray;
+			color: var(--primary-gray);
 			margin-top: 22px;
 		}
 
@@ -79,7 +79,7 @@ export let postImage: Image = {
 		}
 
 		&__image {
-			filter: drop-shadow(10px 20px 16px rgba($primary-black, 0.25));
+			filter: drop-shadow(10px 20px 16px rgba(var(--primary-black), 0.25));
 		}
 
 		img {

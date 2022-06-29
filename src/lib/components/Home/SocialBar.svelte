@@ -36,7 +36,7 @@
 	}
 
 	div {
-		border: 2px solid $primary-gray;
+		border: 2px solid var(--primary-gray);
 		padding: 16px 8px 8px;
 		position: relative;
 
@@ -45,7 +45,7 @@
 			position: absolute;
 			height: 6px;
 			width: 100%;
-			background-color: $primary-black;
+			background-color: var(--primary-black);
 			top: 2px;
 			left: 0;
 		}
