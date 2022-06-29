@@ -1,3 +1,6 @@
+<script>
+	import '$lib/styles/global/index.scss';
+</script>
 <style lang="scss">
 	div {
 		overflow-x: hidden;

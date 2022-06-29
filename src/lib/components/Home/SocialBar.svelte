@@ -1,5 +1,5 @@
 <script>
-	import Stop from '$lib/components/Stop.svelte'
+	import Stop from '$lib/components/SocialStopIconsSVG.svelte'
 
 	export let socials = [
 		{

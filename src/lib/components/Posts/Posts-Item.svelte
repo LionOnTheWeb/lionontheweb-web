@@ -23,10 +23,16 @@
     justify-content: flex-start;
     align-content: center;
     flex-direction: column;
-	min-width: 80vw;
+	min-width: calc(100vw - var(--mobile-post-padding));
 }
 
 .post {
+	&__content {
+		display: flex;
+		flex-direction: column;
+		padding-right: var(--mobile-post-padding);
+	}
+
 	&__title {
 		@extend %post-title;
 	}

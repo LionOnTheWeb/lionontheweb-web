@@ -8,9 +8,12 @@ const config = {
 	// for more information about preprocessors
 	preprocess: sveltePreprocess({
 		scss: { 
-			prependData: `@import "src/lib/styles/global";`
+			prependData: `@import "src/lib/styles/global/typography";
+							@import "src/lib/styles/global/breakpoints";`
 		}
 	}),
+
+	
 
 	kit: {
 		adapter: netlifyAdapter()

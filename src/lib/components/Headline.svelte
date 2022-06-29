@@ -5,10 +5,10 @@
 
 	span {
 		display: block;
-		height: 3px;
+		height: 0.188rem;
 		max-width: 100%;
 		width: 100%;
-		margin-bottom: 18px;
+		margin-bottom: 1.125rem;
 		background-color: var(--primary-white);
 	}
 
@@ -19,7 +19,7 @@
 	h3 {
 		@extend %intro-byline;
 		color: var(--primary-gray);
-		padding-top: 20px;
+		padding-top: 1.25rem;
 		padding-left: 1.2rem;
 		text-indent: -1.2rem;
 	}
