@@ -1,8 +1,10 @@
+@use '../global/fonts' as fonts;
+
 %intro-headline, %intro-byline, %intro-name, %intro-roles, 
 %section-header, 
 %copy, 
 %post-title {
-	font-family: var(--font-primary);
+	font-family: fonts.$font-primary;
 	font-weight: bold;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -33,14 +35,14 @@
 }
 
 %section-header {
-	font-family: var(--font-primary);
+	font-family: fonts.$font-primary;
 	font-size: 6rem;
 	line-height: 3.125rem;
 	text-transform: uppercase;
 }
 
 %copy {
-	font-family: var(--font-serif);
+	font-family: fonts.$font-serif;
 	font-size: 1rem;
 	line-height: 1.56rem;
 	text-align: justify;
@@ -49,17 +51,17 @@
 
 %post-title {
 	font: {
-		family: var(--font-primary);
-		size: 3rem;
+		family: fonts.$font-primary;
+		size: 2.5rem;
 		weight: 800;
 	}
-	line-height: 2.8rem;
+	line-height: 2.2rem;
 	text-transform: uppercase;
 }
 
 %post-subtitle {
 	font: {
-		family: var(--font-primary);
+		family: fonts.$font-primary;
 		size: 1.5rem;
 	}
 	line-height: 1.875rem;
@@ -68,19 +70,15 @@
 
 %post-copy {
 	font: {
-		family: var(--font-serif);
+		family: fonts.$font-serif;
 		size: 1.125rem;
 	}
 	line-height: 1.56rem;
-	:global(strong) {
-		font-weight: bolder;
-		color: var(--subway-line__red);
-	}
 }
 
 %blurb-title {
 	font: {
-		family: var(--font-serif);
+		family: fonts.$font-serif;
 		size: 1.5rem;
 		weight: 800;
 	}
@@ -89,7 +87,7 @@
 
 %blurb-date {
 	font: {
-		family: var(--font-primary);
+		family: fonts.$font-primary;
 		size: .8rem;
 	}
 	line-height: 1.25rem;
@@ -97,17 +95,13 @@
 }
 
 %body-copy {
-	font-family: var(--font-secondary);
+	font-family: fonts.$font-secondary;
 	font-size: 1.125rem;
 	font-weight: 600;
-	:global(strong) {
-		font-weight: bolder;
-		color: var(--subway-line__red);
-	}
 }
 
 %blurb-header {
-	font-family: var(--font-primary);
+	font-family: fonts.$font-primary;
 	font-size: 4em;
 	font-weight: 700;
 	letter-spacing: -0.04em;

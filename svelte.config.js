@@ -4,20 +4,15 @@ import sveltePreprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+	kit: { adapter: netlifyAdapter() },
+
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
 	preprocess: sveltePreprocess({
-		scss: { 
-			prependData: `@import "src/lib/styles/global/typography";
-							@import "src/lib/styles/global/breakpoints";`
+		scss: {
+			includePaths: ['./src/lib/styles']
 		}
-	}),
-
-	
-
-	kit: {
-		adapter: netlifyAdapter()
-	}
+	})
 };
 
 export default config;

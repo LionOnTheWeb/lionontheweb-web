@@ -3,19 +3,21 @@
 	import Header from '$lib/components/SectionHeader.svelte'
 	import Footer from '$lib/components/Footer.svelte'
 
-	import About from '$lib/components/Home/About.svelte'
-	import Works from '$lib/components/Home/Works.svelte'
-	import Blurbs from '$lib/components/Home/Blurbs.svelte'
+	import About from '$lib/components/Landing/About.svelte'
+	import Works from '$lib/components/Landing/Works.svelte'
+	import Blurbs from '$lib/components/Landing/Blurbs.svelte'
 </script>
 
 <style lang="scss">
+	@use 'base/colors' as colors;
+
 	main {
-		background-color: var(--primary-white);
+		background-color: colors.$primary-white;
 	}
 
 	div {
 		position: relative;
-		background-color: var(--primary-white);
+		background-color: colors.$primary-white;
 		overflow: hidden;
 		padding-top: 8em;
 		padding-bottom: 3em;

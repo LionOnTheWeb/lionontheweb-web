@@ -31,12 +31,14 @@
 </script>
 
 <style lang="scss">
+	@use 'base/colors' as colors;
+
 	div, ul, li {
 		display: inline-block;
 	}
 
 	div {
-		border: 2px solid var(--primary-gray);
+		border: 2px solid colors.$primary-gray;
 		padding: 16px 8px 8px;
 		position: relative;
 
@@ -45,7 +47,7 @@
 			position: absolute;
 			height: 6px;
 			width: 100%;
-			background-color: var(--primary-black);
+			background-color: colors.$primary-black;
 			top: 2px;
 			left: 0;
 		}

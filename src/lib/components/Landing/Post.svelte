@@ -21,10 +21,13 @@ export let postImage: Image = {
 </script>
 
 <style lang="scss">
+	@use 'base/colors' as colors;
+	@use 'base/breakpoints' as breakpoint;
+	@use 'base/typography';
+
 	.post {
 		display: inline-block;
 		list-style: none;
-		font-family: var(--font-primary);
 		max-width: 300px;
 		width: 100%;
 		margin-right: 50%;
@@ -34,11 +37,11 @@ export let postImage: Image = {
 		}
 		
 		padding: 40px 20px 70px;
-		background-color: var(--primary-black);
+		background-color: colors.$primary-black;
 		position: relative;
 		height: 390px;
 		
-		@media (min-width: var(--breakpoint-sm)) {
+		@media (min-width: breakpoint.$small-devices) {
 			display: block;
 			margin-left: 10%;
 			margin-right: 20%;
@@ -58,12 +61,12 @@ export let postImage: Image = {
 	
 		&__title {
 			@extend %post-title;
-			color: var(--primary-white);
+			color: colors.$primary-white;
 		}
 	
 		&__subtitle {
 			@extend %post-subtitle;
-			color: var(--primary-gray);
+			color: colors.$primary-gray;
 			margin-top: 22px;
 		}
 
@@ -79,7 +82,7 @@ export let postImage: Image = {
 		}
 
 		&__image {
-			filter: drop-shadow(10px 20px 16px rgba(var(--primary-black), 0.25));
+			filter: drop-shadow(10px 20px 16px rgba(colors.$primary-black, 0.25));
 		}
 
 		img {

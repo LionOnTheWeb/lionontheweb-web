@@ -3,13 +3,16 @@
 </script>
 
 <style lang="scss">
+	@use 'base/colors' as colors;
+	@use 'base/typography';
+
 	div {
-		background-color: var(--primary-black);
+		background-color: colors.$primary-black;
 	}
 
 	h2 {
 		@extend %section-header;
-		color: var(--primary-white);
+		color: colors.$primary-white;
 		padding-top: 50px;
 
 		&.left {

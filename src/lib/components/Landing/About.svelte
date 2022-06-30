@@ -1,12 +1,17 @@
 <style lang="scss">
+	@use 'base/typography';
+	@use 'base/colors' as colors;
+	@use 'base/breakpoints' as breakpoint;
+	@use 'base/variables' as var;
+
 	div {
-		padding: var(--mobile-padding);
-		background-color: var(--primary-white);
+		padding: var.$mobile-padding;
+		background-color: colors.$primary-white;
 		padding-top: 80px;
 		padding-bottom: 100px;
 		position: relative;
 		
-		@media (min-width: $breakpoint-sm) {
+		@media (min-width: breakpoint.$small-devices) {
 			padding-top: 300px;
 		}
 	}
@@ -25,9 +30,9 @@
 		padding: 15px;
 		padding-top: 5px;
 		display: inline-block;
-		background-color: var(--primary-white);
+		background-color: colors.$primary-white;
 
-		@media (min-width: $breakpoint-sm) {
+		@media (min-width: breakpoint.$small-devices) {
 			position: absolute;
 			right: 25px;
 			// bottom: -25px;

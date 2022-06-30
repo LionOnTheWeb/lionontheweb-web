@@ -1,9 +1,15 @@
 <style lang="scss">
+	@use 'base/colors' as colors;
+	@use 'base/breakpoints' as breakpoint;
+	@use 'base/variables' as var;
+	@use 'base/typography';
+
+
 	div {
-		padding: var(--mobile-padding);
+		padding: var.$mobile-padding;
 		text-align: center;
 
-		@media (min-width: $breakpoint-sm) {
+		@media (min-width: breakpoint.$small-devices) {
 			text-align: right;
 		}
 	}
@@ -12,10 +18,12 @@
 		@extend %intro-name;
 		padding-top: 150px;
 		padding-bottom: 75px;
+		color: colors.$primary-white;
 
-		@media (min-width: $breakpoint-sm) {
+		@media (min-width: breakpoint.$small-devices) {
 			padding-top: 5rem;
 			padding-bottom: 30px;
+			color: colors.$primary-black;
 		}
 	}
 
@@ -32,12 +40,12 @@
 	ul {
 		list-style: none;
 		@extend %intro-roles;
-		color: var(--primary-gray);
+		color: colors.$primary-gray;
 
 		li {
 			margin-top: 14px;
 
-			@media (min-width: $breakpoint-sm) {
+			@media (min-width: breakpoint.$small-devices) {
 				text-align: right;
 			}
 		}

@@ -35,10 +35,6 @@
 	// }
 </script>
 
-<style lang="scss">	
-
-</style>
-
 <!-- <div bind:clientWidth={postItemWidth}> -->
 	<!-- <ul bind:this={posts} on:scroll={()=>sleft=posts.scrollLeft}> -->
 

@@ -17,6 +17,8 @@ const jumpLink = (e) => {
 </script>
 
 <style lang="scss">
+	@use 'base/colors' as colors;
+	
 	nav {
 		display: block;
 		margin: 0 auto;
@@ -26,7 +28,7 @@ const jumpLink = (e) => {
 		background-color: darkorange;
 		$borderRadius: calc($height/2);
 		border-radius: $borderRadius $borderRadius $borderRadius $borderRadius;
-		border: 3px solid var(--primary-white);
+		border: 3px solid colors.$primary-white;
 
 		ul {
 			height: 100%;

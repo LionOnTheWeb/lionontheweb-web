@@ -19,7 +19,7 @@
 	]
 
 	const image = {
-		imgUrl: 'https://via.placeholder.com/300x150'
+		imgUrl: 'https://via.placeholder.com/375x500'
 	}
 
 	const posts = [
@@ -51,24 +51,6 @@
 	// 	}
 	// }
 </script>
-
-<style lang="scss">	
-	// ul {
-	// 	@include breakpoint('mobile-only') {
-	// 		padding: 3rem 0.8rem 3rem;
-	// 	}
-	// 	background-color: $primary-white;
-	// 	white-space: nowrap;
-	// 	width: auto;
-	// 	overflow: scroll hidden;
-
-	//  @media (min-width: var(--breakpoint-sm)) {
-	// 		// transform: rotateX(30deg) rotateY(-15deg) rotateZ(42deg);
-	// 		display: flex;
-
-	// 	}
-	// }
-</style>
 
 <!-- <div bind:clientWidth={postItemWidth}> -->
 	<!-- <ul bind:this={posts} on:scroll={()=>sleft=posts.scrollLeft}> -->
