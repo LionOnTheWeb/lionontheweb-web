@@ -88,23 +88,36 @@
 %blurb-date {
 	font: {
 		family: fonts.$font-primary;
-		size: .8rem;
+		size: 1rem;
 	}
-	line-height: 1.25rem;
+	line-height: 1.75rem;
 	text-transform: uppercase;
 }
 
 %body-copy {
-	font-family: fonts.$font-secondary;
-	font-size: 1.125rem;
-	font-weight: 600;
+	font: {
+		family: fonts.$font-secondary;
+		size: 1.125rem;
+		weight: 600;
+	}
 }
 
 %blurb-header {
-	font-family: fonts.$font-primary;
-	font-size: 4em;
-	font-weight: 700;
+	font: {
+		family: fonts.$font-primary;
+		size: 4rem;
+		weight: 700;
+	}
 	letter-spacing: -0.04em;
 	line-height: 1em;
 }
 
+%blurb-tag {
+	font: {
+		family: fonts.$font-primary;
+		size: .8rem;
+		weight: 400;
+		style: italic;
+	}
+	line-height: 1.5rem;
+}

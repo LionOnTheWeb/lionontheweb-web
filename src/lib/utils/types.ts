@@ -9,11 +9,19 @@ type Image = {
 	altText?: string
 }
 
-export type PostData = {
+export type WorksData = {
 	title: string,
-	subtitle?: string,
+	subtitle: string,
 	date?: string,
 	summary?: string,
 	tech?: Tech[],
-	image?: Image
+	image?: Image,
+	featured: boolean
+}
+
+export type BlurbsData = {
+	title: 'Why I love svelte, and where it fits in web 3',
+	date?: 'Monday, 4 May 2022',
+	image?: Image,
+	featured: true,
 }

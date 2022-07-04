@@ -1,6 +1,13 @@
 <style lang="scss">
+	@use 'base/colors' as colors;
+
 	div {
 		overflow-x: hidden;
+	}
+
+	:global(strong) {
+		color: colors.$subway-line__red;
+		font-weight: 800;
 	}
 </style>
 

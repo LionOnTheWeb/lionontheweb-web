@@ -19,8 +19,8 @@
 		position: relative;
 		background-color: colors.$primary-white;
 		overflow: hidden;
-		padding-top: 8em;
-		padding-bottom: 3em;
+		padding-top: 4rem;
+		padding-bottom: 8rem;
 	}
 
 	:global(.container) {

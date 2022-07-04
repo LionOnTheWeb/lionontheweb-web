@@ -1,9 +1,7 @@
 <script lang="ts">
-	// import Post from './Post.svelte'
 	import Pagination from './Scroller.svelte'
-	import Posts from '../Posts/index.svelte'
+	import Blurbs from '$lib/components/Blurbs/index.svelte'
 
-	// let posts, sleft, postItemWidth;
 	const image = {
 		imgUrl: 'https://via.placeholder.com/300x150'
 	}
@@ -12,14 +10,15 @@
 		{
 			title: 'Why I love svelte, and where it fits in web 3',
 			date: 'Monday, 4 May 2022',
+			image: image,
+			featured: true,
 		},
 		{
 			title: 'What\'s love got to do with it',
 			date: 'Tuesday, 14 March 2022',
-			image: image,
+			featured: false,
 		}
 	]
-
 
 	// const sectionTracker = ({target}) => {
 	// 	// If scrolled to a section
@@ -39,7 +38,7 @@
 	<!-- <ul bind:this={posts} on:scroll={()=>sleft=posts.scrollLeft}> -->
 
 {#if blurbs}
-	<Posts postType="blurbs" data={blurbs} />
+	<Blurbs data={blurbs} />
 {/if}
 	<!-- <p>UL scroll left: {sleft ? sleft: 0}</p>
 	<p>Div client width: {postItemWidth}</p> -->

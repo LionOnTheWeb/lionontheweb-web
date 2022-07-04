@@ -1,7 +1,7 @@
 <script lang="ts">
 	// import Post from './Post.svelte'
 	import Pagination from './Scroller.svelte'
-	import Posts from '../Posts/index.svelte'
+	import Works from '$lib/components/Works/index.svelte'
 
 	// let posts, sleft, postItemWidth;
 
@@ -22,19 +22,21 @@
 		imgUrl: 'https://via.placeholder.com/375x500'
 	}
 
-	const posts = [
+	const works = [
 		{
 			title: 'Dotdash Meredith',
 			subtitle: 'Software Engineer',
 			summary: `Spent a majority of the <strong>first</strong> quarter investigating an 80% decline in new subscriptions.`,
 			tech: tech,
-			image: image
+			image: image,
+			featured: false,
 		},
 		{
 			title: 'Merriam-Webster',
 			subtitle: 'Software Engineer',
 			summary: `Responsible for 80% of frontend code for landing page.`,
-			tech: tech
+			tech: tech,
+			featured: false,
 		}
 	]
 
@@ -55,9 +57,9 @@
 <!-- <div bind:clientWidth={postItemWidth}> -->
 	<!-- <ul bind:this={posts} on:scroll={()=>sleft=posts.scrollLeft}> -->
 
-{#if posts}
-	<Posts data={posts} />
+{#if works}
+	<Works data={works} />
 {/if}
 	<!-- <p>UL scroll left: {sleft ? sleft: 0}</p>
 	<p>Div client width: {postItemWidth}</p> -->
-<Pagination aria-label="Work Portfolio Pagination" number={posts.length}/>
+<Pagination aria-label="Portfolio Pagination" number={works.length}/>
