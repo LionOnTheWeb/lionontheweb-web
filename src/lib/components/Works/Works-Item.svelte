@@ -37,7 +37,7 @@
 			size: cover;
 		}
 
-		&:after {
+		&.has-bg:after {
 			content: '';
 			position: absolute;
 			z-index: 1;
@@ -80,12 +80,13 @@
 	&__img {
 		max-width: 1.875rem;
 		width: 100%;
+		object-fit: cover;
 	}
 }
 </style>
 
 <div class="work">
-	<div class="work__content" style="{workBackgroundURL}">
+	<div class="work__content {workBackgroundURL ? 'has-bg' : ''}" style="{workBackgroundURL}">
 		<h3 class="work__title">{worksData.title}</h3>
 		<h4 class="work__subtitle">{worksData.subtitle}</h4>
 	

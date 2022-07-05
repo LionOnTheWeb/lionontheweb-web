@@ -20,15 +20,15 @@ const jumpLink = (e) => {
 	@use 'base/colors' as colors;
 	
 	nav {
+		$height: 3.125rem;
+		$borderRadius: calc($height/2);
+
 		display: block;
 		margin: 0 auto;
-		$height: 50px;
 		height: $height;
-		// width: 95%;
-		background-color: darkorange;
-		$borderRadius: calc($height/2);
-		border-radius: $borderRadius $borderRadius $borderRadius $borderRadius;
-		border: 3px solid colors.$primary-white;
+		width: 85%;
+		background-color: colors.$subway-line__orange;
+		border-radius: $borderRadius;
 
 		ul {
 			height: 100%;
@@ -37,15 +37,15 @@ const jumpLink = (e) => {
 			justify-content: center;
 			align-content: center;
 			align-items: center;
-			gap: 10px;
+			gap: 1rem;
 
 			li {
 				position: relative;
-				width: calc($height - 20px);
-				height: calc($height - 20px);
-				background-color: rgb(83, 83, 83);
+				width: 1.8rem;
+				height: 1.8rem;
+				background-color: colors.$subway-nav__stop;
 				border-radius: 50%;
-				border: 4px solid darken(rgb(83, 83, 83), 40%);
+				border: .25rem solid darken(colors.$subway-nav__stop, 40%);
 
 				a {
 					font-size: 0;

@@ -9,6 +9,12 @@ type Image = {
 	altText?: string
 }
 
+export type Profile = {
+	name: string,
+	image: Image,
+	tags: Array<string>
+}
+
 export type WorksData = {
 	title: string,
 	subtitle: string,

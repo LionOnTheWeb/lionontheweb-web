@@ -35,9 +35,9 @@
 		}
 		
 		&__featured-image {
-			transform: translateY(2rem);
 			width: 100%;
-			z-index: 1;
+			transform: translateY(2rem);
+			object-fit: cover;
 		}
 
 		&__tags {
