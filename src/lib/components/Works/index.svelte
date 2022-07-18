@@ -1,33 +1,29 @@
 <script lang="ts">
-	import WorksItem from './Works-Item.svelte'
-	import type { WorksData } from '$lib/utils/types'
+	// import type { WorksData } from '$lib/utils/types'
+	import worksData from '$lib/data/worksData.json'
 
-	export let data: WorksData[];
+	import WorksItem from './Works-Item.svelte'
+	import Pagination from '$lib/components/Pagination.svelte'
+
+	let worksCarouselEl
 </script>
 
 <style lang="scss">
 	@use 'base/variables' as var;
 
-	.carousel {
+	div {
 		display: flex;
 		flex-direction: row;
 		overflow: auto;
-		gap: 3.125rem;
-		padding-left: var.$mobile-work-padding;
-
-		&__container {
-			width: auto;
-			margin-bottom: 3rem;
-		}
+		margin-bottom: 3rem;
+		width: 100%;
 	}
 </style>
 
-<div>
-	<div class="carousel__container">
-		<div class="carousel">
-			{#each data as work}
-				<WorksItem worksData={work} />
-			{/each}
-		</div>
-	</div>
+<div bind:this={worksCarouselEl}>
+	{#each worksData as workItem}
+		<WorksItem worksData={workItem} />
+	{/each}
 </div>
+
+<Pagination aria-label="Portfolio Pagination" number={worksData.length} carouselEl={worksCarouselEl}/>

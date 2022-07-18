@@ -67,9 +67,9 @@
 		<h3 class="blurb__title">{blurbsData.title}</h3>
 		<span class="blurb__date">{blurbsData.date}</span>
 		<ul class="blurb__tags">
-			<li class="blurb__tag"><a href="#">#podcast</a></li>
-			<li class="blurb__tag"><a href="#">#technology</a></li>
-			<li class="blurb__tag"><a href="#">#personal</a></li>
+			<li class="blurb__tag"><a href="#0">#podcast</a></li>
+			<li class="blurb__tag"><a href="#0">#technology</a></li>
+			<li class="blurb__tag"><a href="#0">#personal</a></li>
 		</ul>
 	</div>
 </div>

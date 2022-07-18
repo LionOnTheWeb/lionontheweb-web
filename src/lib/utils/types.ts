@@ -26,8 +26,8 @@ export type WorksData = {
 }
 
 export type BlurbsData = {
-	title: 'Why I love svelte, and where it fits in web 3',
-	date?: 'Monday, 4 May 2022',
+	title: string,
+	date?: string,
 	image?: Image,
-	featured: true,
+	featured: boolean,
 }

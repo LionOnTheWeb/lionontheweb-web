@@ -1,0 +1,41 @@
+[
+	{
+		"title": "Dotdash Meredith",
+		"subtitle": "Software Engineer",
+		"summary": "Spent a majority of the <strong>first</strong> quarter investigating an 80% decline in new subscriptions.",
+		"tech": [
+			{
+				"name": "Javascript",
+				"imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png",
+				"imgAlt": "Javscript Logo"
+			},
+			{
+				"name": "Typescript",
+				"imgUrl": "https://miro.medium.com/max/816/1*mn6bOs7s6Qbao15PMNRyOA.png",
+				"imgAlt": "Typescript Logo"
+			}
+		],
+		"image": {
+			"imgUrl": "https://via.placeholder.com/375x500"
+		},
+		"featured": false
+	},
+	{
+		"title": "Merriam-Webster",
+		"subtitle": "Software Engineer",
+		"summary": "Responsible for 80% of frontend code for landing page.",
+		"tech": [
+			{
+				"name": "Javascript",
+				"imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png",
+				"imgAlt": "Javscript Logo"
+			},
+			{
+				"name": "Typescript",
+				"imgUrl": "https://miro.medium.com/max/816/1*mn6bOs7s6Qbao15PMNRyOA.png",
+				"imgAlt": "Typescript Logo"
+			}
+		],
+		"featured": false
+	}
+]

@@ -14,11 +14,8 @@
 .work {
 	position: relative;
 	display: flex;
-	flex: 1 100%;
-	justify-content: flex-start;
-	align-content: center;
+	flex: 1 0 100vw;
 	flex-direction: column;
-	min-width: calc(100vw - var.$mobile-work-padding);
 
 	&__content {
 		position: relative;
@@ -26,7 +23,7 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 25rem;
-		margin-right: 4rem;
+		margin: 0 2rem;
 		padding-left: .5rem;
 		padding-top: var.$mobile-work-padding;
 		color: colors.$primary-white;
@@ -52,6 +49,8 @@
 	&__title {
 		@extend %post-title;
 		color: colors.$primary-white;
+		text-shadow: 0.2rem 0.2rem 0.4rem lighten(colors.$primary-black, 10%);
+		margin-left: -1.5rem;
 		z-index: 2;
 	}
 
@@ -64,21 +63,30 @@
 	&__summary {
 		@extend %post-copy;
 		margin-bottom: 1rem;
+		padding-right: 2rem;
 		z-index: 2;
 	}
 }
 
 .tech {
+	$tech-item-size: 1.875rem;
+
 	position: absolute;
 	z-index: 2;
 	display: flex;
 	flex-flow: column wrap;
 	gap: .2rem;
-	margin: .5rem auto;
-	right: -2.2rem;
+	right: -1rem;
+	top: 3rem;
+
+	&__item {
+		max-width: $tech-item-size;
+		max-height: $tech-item-size;
+		box-shadow: -0.2rem 0.2rem 0.5rem  lighten(colors.$primary-black, 20%);
+	}
 
 	&__img {
-		max-width: 1.875rem;
+		max-width: $tech-item-size;
 		width: 100%;
 		object-fit: cover;
 	}

@@ -1,25 +1,28 @@
 <script lang="ts">
 	import BlurbsItem from './Blurbs-Item.svelte'
-	import type { BlurbsData } from '$lib/utils/types'
+	import Pagination from '$lib/components/Pagination.svelte'
 
-	export let data: BlurbsData[];
+	import blurbsData from '$lib/data/blurbsData.json'
+
+	let blurbsContainer;
 </script>
 
 <style lang="scss">
 	@use 'base/variables' as var;
 
-	.container {
+	div {
 		display: flex;
 		flex-direction: column;
-		overflow: hidden;
 		gap: 3.125rem;
 		padding: 0 1rem;
 		margin-bottom: 3rem;
 	}
 </style>
 
-<div class="container">
-	{#each data as blurb}
-		<BlurbsItem blurbsData={blurb} />
+<div bind:this={blurbsContainer}>
+	{#each blurbsData as blurbsItem}
+		<BlurbsItem blurbsData={blurbsItem} />
 	{/each}
 </div>
+
+<!-- <Pagination aria-label="Blog Post Pagination" number={blurbsData.length} carouselEl={blurbsContainer}/> -->

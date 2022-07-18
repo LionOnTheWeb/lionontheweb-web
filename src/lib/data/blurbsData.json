@@ -1,0 +1,15 @@
+[
+	{
+		"title": "Why I love svelte, and where it fits in web 3",
+		"date": "Monday, 4 May 2022",
+		"image": {
+			"imgUrl": "https://via.placeholder.com/300x150"
+		},
+		"featured": true
+	},
+	{
+		"title": "What's love got to do with it",
+		"date": "Tuesday, 14 March 2022",
+		"featured": false
+	}
+]

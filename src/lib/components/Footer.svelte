@@ -1,14 +1,28 @@
 <script lang="ts">
-	import SocialBar from '$lib/components/Landing/SocialBar.svelte';
+	import SocialBar from '$lib/components/SocialBar.svelte';
 </script>
 
 <style lang="scss">
+	@use 'base/colors' as colors;
 	@use 'base/breakpoints' as breakpoint;
 	@use 'base/typography';
 	
 	footer {
-		margin: 6rem auto 3rem;
+		position: relative;
+		margin: 2rem auto 3rem;
+		padding-top: 4rem;
 		text-align: center;
+
+		&:after {
+			content: '';
+			position: absolute;
+			height: .1rem;
+			width: 80vw;
+			top: 1rem;
+			left: 10%;
+			background-color: colors.$primary-gray;
+			color: colors.$primary-gray;
+		}
 	}
 
 	p {
