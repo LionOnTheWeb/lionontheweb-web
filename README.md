@@ -1,40 +1,12 @@
-# create-svelte
+# LionOnTheWeb.com
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## About
+This project documents the journey of the continuous improvement of the https://www.lionontheweb.com website, a personal website that is the home of the blog and portfolio for myself, Asad Richardson. The project is built using [SvelteKit](https://kit.svelte.dev/) via Vite, Yarn, Contentful API and Netlify. 
 
-## Creating a project
+This project will also serve to demonstrate my level as a senior engineer with up to date programming practices, accessibility, and performance. I also just want to demonstrate how intuitive building a fully functioning site with SEO, and mixed media can be with Svelte! 
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Development
+- This project uses Vite as the engine and Yarn as the package manager for this project
+	- If you wish to use either of these dependencies, please ensure that node `18.6.0` is installed first (I personally use nvm to manage my node versions per directory)
+- Run the project by running `yarn run dev` locally to get started
+- Other project commands are available in this project's `package.json` file
