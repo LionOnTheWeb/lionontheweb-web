@@ -1,4 +1,3 @@
-import adapter from '@sveltejs/adapter-auto';
 import netlifyAdapter from '@sveltejs/adapter-netlify';
 import sveltePreprocess from 'svelte-preprocess';
 
