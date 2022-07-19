@@ -1,5 +1,5 @@
 <script>
-	import Stop from '$lib/components/SocialStopIconsSVG.svelte'
+	import Icon from '$lib/components/Icons.svelte'
 
 	export let socials = [
 		{
@@ -66,11 +66,7 @@
 
 <div>
 	<span>
-		<svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M39 0H0.77789V10.75H39V0Z" fill="black"/>
-			<path d="M39 38.2221V0H28.25V38.2221H39Z" fill="black"/>
-			<path d="M31.3986 0L0.837612 30.561L8.43899 38.1624L39 7.60138L31.3986 0Z" fill="black"/>
-		</svg>
+		<Icon name={'arrow'} height='2.438rem' width='2.438rem'/>
 	</span>
 	
 	{#if socials}
@@ -78,7 +74,7 @@
 		{#each socials as social}
 		<li>
 			<a href={social.url}>
-				<Stop name={social.name} height='40px' width='40'/>
+				<Icon name={social.name} height='40px' width='40'/>
 			</a>
 		</li>
 		{/each}

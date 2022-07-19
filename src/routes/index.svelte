@@ -22,6 +22,7 @@
 		overflow: hidden;
 		padding-top: 4rem;
 		padding-bottom: 8rem;
+		text-align: center;
 	}
 </style>
 

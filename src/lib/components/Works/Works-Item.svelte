@@ -51,6 +51,7 @@
 		color: colors.$primary-white;
 		text-shadow: 0.2rem 0.2rem 0.4rem lighten(colors.$primary-black, 10%);
 		margin-left: -1.5rem;
+		padding-right: 1.5rem;
 		z-index: 2;
 	}
 

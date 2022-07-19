@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SocialBar from '$lib/components/SocialBar.svelte';
+	import SocialBar from '$lib/components/Social.Bar.svelte';
 </script>
 
 <style lang="scss">

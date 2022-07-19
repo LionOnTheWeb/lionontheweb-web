@@ -3,7 +3,7 @@
 	import worksData from '$lib/data/worksData.json'
 
 	import WorksItem from './Works-Item.svelte'
-	import Pagination from '$lib/components/Pagination.svelte'
+	import CarouselNav from '$lib/components/Nav.Carousel.svelte'
 
 	let worksCarouselEl
 </script>
@@ -17,6 +17,7 @@
 		overflow: auto;
 		margin-bottom: 3rem;
 		width: 100%;
+		text-align: left;
 	}
 </style>
 
@@ -26,4 +27,4 @@
 	{/each}
 </div>
 
-<Pagination aria-label="Portfolio Pagination" number={worksData.length} carouselEl={worksCarouselEl}/>
+<CarouselNav aria-label="Portfolio Carousel Pagination" number={worksData.length} carouselEl={worksCarouselEl}/>
