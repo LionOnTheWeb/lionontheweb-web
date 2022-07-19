@@ -1,24 +1,11 @@
 <script lang="ts">
 import { carouselJumplink } from '$lib/utils/functions'
 import { activeWorksItem } from '$lib/utils/stores'
-import { onMount } from 'svelte'
 
 import Icon from '$lib/components/Icons.svelte'
 
 export let number: number;
 export let carouselEl: HTMLElement;
-
-let carouselControlLeft: any;
-let carouselControlRight: any;
-
-onMount(async () => {
-	console.log(carouselControlLeft);
-	// carouselControlLeft.querySelectorAll('path').forEach(path => {
-	// 	// path.style.setProperty('--arrow-color', 'darkgray')
-	// 	console.log(path);
-	// });
-});
-
 </script>
 
 <style lang="scss">
@@ -49,30 +36,41 @@ onMount(async () => {
 
 	}
 
-	:global(.carousel-control-left), :global(.carousel-control-right) {
-		--arrow-color: #{lighten(colors.$subway-nav__stop, 10%)};
+	$control-padding: .8rem;
+	$control-size: 1rem;
 
+	button.carousel-control-left--btn, button.carousel-control-right--btn {
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		margin: auto 0;
-		width: 1rem;
-		height: 1rem;
+		width: calc(#{$control-size} * 2rem);
+		height: 2rem;
+		background: none;
+		outline: none;
+		border: 0;
+	}
+
+	:global(svg.carousel-control-left--svg), :global(svg.carousel-control-right--svg) {
+
+		// Custom variable set with color black fallback defined in Icons.svelte --> 'arrow' path elements
+		--arrow-color: #{lighten(colors.$subway-nav__stop, 10%)};
+
+		width: $control-size;
+		height: $control-size;
 	}
 	
-	$control-padding: .8rem;
-	
-	:global(.carousel-control-left) {
+	button.carousel-control-left--btn {
 		left: $control-padding;
 		transform: rotate(225deg);
 	}
 	
-	:global(.carousel-control-right) {
+	button.carousel-control-right--btn {
 		right: $control-padding;
 		transform: rotate(45deg);
 	}
 
-	button {
+	button.carousel-indicator {
 		width: 2.2rem;
 		height: 2.2rem;
 		background-color: colors.$subway-nav__stop;
@@ -88,13 +86,17 @@ onMount(async () => {
 </style>
 
 <nav {...$$props}>
-	<Icon class="carousel-control-left" name={'arrow'}/>
+	<button class="carousel-control-left--btn">
+		<Icon class="carousel-control-left--svg" name={'arrow'}/>
+	</button>
 	<ul>
 		{#each Array(number) as item, index}
 		<li>
-			<button class:active={$activeWorksItem == index} on:click={(e) => carouselJumplink(e, index, carouselEl)}></button>
+			<button class="carousel-indicator" class:active={$activeWorksItem == index} on:click={(e) => carouselJumplink(e, index, carouselEl)}></button>
 		</li>
 		{/each}
 	</ul>
-	<Icon class="carousel-control-right" name={'arrow'}/>
+	<button class="carousel-control-right--btn">
+		<Icon class="carousel-control-right--svg" name={'arrow'}/>
+	</button>
 </nav>

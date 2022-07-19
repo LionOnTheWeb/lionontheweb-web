@@ -16,6 +16,7 @@
 	.blurb {
 		&__content {
 			position: relative;
+			text-align: left;
 		}
 
 		&__title {
