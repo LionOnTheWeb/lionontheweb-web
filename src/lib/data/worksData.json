@@ -1,5 +1,31 @@
 [
 	{
+		"title": "LionOnTheWeb.com",
+		"subtitle": "Principle Creator",
+		"summary": "Over iteration after iteration of design and engineering, following the philosophies of Massimo Vignelli, I was able to realize this website. ",
+		"tech": [
+			{
+				"name": "Javascript",
+				"imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png",
+				"imgAlt": "Javscript Logo"
+			},
+			{
+				"name": "Typescript",
+				"imgUrl": "https://miro.medium.com/max/816/1*mn6bOs7s6Qbao15PMNRyOA.png",
+				"imgAlt": "Typescript Logo"
+			},
+			{
+				"name": "Svelte",
+				"imgUrl": "https://pbs.twimg.com/profile_images/1121395911849062400/7exmJEg4_400x400.png",
+				"imgAlt": "Svelte Logo"
+			}
+		],
+		"image": {
+			"imgUrl": "https://mitpress.mit.edu/sites/default/files/styles/large_book_cover/http/mitp-content-server.mit.edu%3A18180/books/covers/cover/%3Fcollid%3Dbooks_covers_0%26isbn%3D9780262015486%26type%3D.jpg"
+		},
+		"featured": true
+	},
+	{
 		"title": "Dotdash Meredith",
 		"subtitle": "Software Engineer",
 		"summary": "Spent a majority of the <strong>first</strong> quarter investigating an 80% decline in new subscriptions.",
