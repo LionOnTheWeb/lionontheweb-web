@@ -14,10 +14,12 @@
 	div {
 		display: flex;
 		flex-direction: row;
-		overflow: auto;
+		// overflow: auto;
 		margin-bottom: 3rem;
 		width: 100%;
 		text-align: left;
+		scroll-snap-type: x mandatory;
+		overflow-x: scroll;
 	}
 </style>
 

@@ -1,20 +1,17 @@
 <script lang="ts">
 	import type { WorksData } from '$lib/utils/types'
-	import { TruncateText } from '$lib/utils/functions'
+	import { TruncateText } from '$lib/utils/functions/truncateText'
 	import { onMount } from 'svelte'
 
 	export let worksData: WorksData;
 
-	let workTitle;
-
+	let workTitleEl;
 	let workBackgroundURL = worksData?.image?.imgUrl ? `--post-background-url: url("${worksData?.image?.imgUrl}")` : '';
-
+	
 	const { title } = worksData;
 
 	onMount(() => {
-		const titleFit = new TruncateText(title, workTitle);
-
-		worksData.title = titleFit.evaluate;
+		worksData.title = new TruncateText(title, workTitleEl).evaluate; // Evaluate text for truncation
 	})
 </script>
 
@@ -27,8 +24,9 @@
 	position: relative;
 	display: flex;
 	flex: 1 0 100vw;
-	max-width: 100vw;
 	flex-direction: column;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
 
 	&__content {
 		position: relative;
@@ -110,7 +108,7 @@
 
 <div class="work">
 	<div class="work__content {workBackgroundURL ? 'has-bg' : ''}" style="{workBackgroundURL}">
-		<h3 class="work__title" bind:this={workTitle}>{worksData.title}</h3>
+		<h3 class="work__title" bind:this={workTitleEl}>{worksData.title}</h3>
 		<h4 class="work__subtitle">{worksData.subtitle}</h4>
 	
 		{#if worksData.tech}
