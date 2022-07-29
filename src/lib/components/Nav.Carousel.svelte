@@ -1,17 +1,11 @@
 <script lang="ts">
-import { jumpTo, Carousel } from '$lib/utils/functions/carousel'
+import { jumpTo } from '$lib/utils/functions/carousel'
 import { activeWorksItem } from '$lib/utils/stores'
 
 import Icon from '$lib/components/Icons.svelte'
-import { onMount } from 'svelte';
 
 export let number: number;
 export let carouselEl: HTMLElement;
-
-// onMount(() => {
-// 	carouselControl.jumpTo();
-// })
-// let carouselControl = new Carousel(carouselEl);
 </script>
 
 <style lang="scss">

@@ -24,6 +24,7 @@
 	position: relative;
 	display: flex;
 	flex: 1 0 100vw;
+	max-width: 100vw;
 	flex-direction: column;
 	scroll-snap-align: start;
 	scroll-snap-stop: always;
